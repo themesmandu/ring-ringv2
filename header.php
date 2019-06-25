@@ -85,48 +85,7 @@
 
 			<?php if (is_front_page()) { ?>
 				<!-- slider background -->
-				<div id="header-slider" class="carousel slide carousel-fade" data-ride="carousel">
-
-
-					<ul class="carousel-indicators">
-						<?php
-						for ($i = 0; $i < 4; $i++) {
-							?>
-							<li data-target="#header-slider" data-slide-to="<?php echo $i; ?>" class="
-							<?php
-							if (0 == $i) {
-								echo 'active';
-							}
-							?>
-						"></li>
-						<?php } ?>
-					</ul>
-
-					<div class="carousel-inner">
-						<?php
-						for ($i = 0; $i < 4; $i++) {
-							$j = $i + 1;
-							?>
-							<div class="carousel-item <?php echo 'carousel-item-' . $i; ?> <?php
-																							if (0 == $i) {
-																								echo 'active';
-																							}
-																							?>
-						">
-								<!-- Style for slider background -->
-								<style>
-									.carousel-item-<?php echo $i;
-
-													?> {
-										background-image: url(<?php
-																echo esc_url(ring_ring_get_theme_option('slider_image_' . $j));
-																?>);
-									}
-								</style>
-							</div>
-						<?php } ?>
-					</div>
-
+				<div id="header-gradient">
 					<div class="header-content">
 						<div class="container">
 							<h2><?php echo ring_ring_get_theme_option('slider_heading'); ?></h2>

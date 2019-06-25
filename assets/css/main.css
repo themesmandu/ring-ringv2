@@ -262,9 +262,11 @@ h6 {
     color: #ffffff;
     margin: 0;
 }
-.top-navigation .site-branding img{
-	max-width: 290px;
+
+.top-navigation .site-branding img {
+    max-width: 290px;
 }
+
 .navbar-expand-lg .menu-item {
     margin: 0 24px;
     position: relative;
@@ -321,47 +323,11 @@ h6 {
 
 /* -- Background Image Slide Styles -- */
 
-.carousel-inner {
-    position: relative;
-}
-
-.carousel-inner:before,
-.about_section_three::before {
-    content: '';
-    background: rgba(0, 0, 0, .41);
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    z-index: 9;
-}
-
-.carousel-item {
-    min-height: 735px;
-    background-size: cover;
-    background-position: center;
-}
-
-.carousel-indicators {
-    bottom: 20px;
-}
-
-.carousel-indicators li {
-    height: 17px;
-    width: 17px;
-    border: none;
-    margin: 0 9px 0 0;
-    opacity: 1;
-    background: #4c535a;
-}
-
-.carousel-indicators li:last-child {
-    margin: 0;
-}
-
-.carousel-indicators li.active {
-    background: #c4c73c;
+#header-gradient {
+    width: 100%;
+    height: 735px;
+    padding: 0px;
+    margin: 0px;
 }
 
 
