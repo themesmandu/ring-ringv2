@@ -1,0 +1,1573 @@
+/* --- Loading Fonts Style -- */
+
+
+/* Gotham Fonts */
+
+@font-face {
+    font-family: "GothamBook";
+    src: url('../fonts/Gotham-Book.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "GothamLight";
+    src: url('../fonts/Gotham-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "GothamMedium";
+    src: url('../fonts/Gotham-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "GothamBold";
+    src: url('../fonts/Gotham-Bold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: "GothamBlack";
+    src: url('../fonts/Gotham-Black.otf') format('opentype');
+}
+
+
+/* Montserrat Fonts */
+
+@font-face {
+    font-family: "Montserrat";
+    src: url('../fonts/Montserrat-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: "MontserratSemiBold";
+    src: url('../fonts/Montserrat-SemiBold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: "MontserratBold";
+    src: url('../fonts/Montserrat-Bold.otf') format('opentype');
+}
+
+
+/* SFUIText Fonts */
+
+@font-face {
+    font-family: "SFUIText";
+    src: url('../fonts/SFUIText-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "SFUITextLight";
+    src: url('../fonts/SFUIText-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "SFUITextBold";
+    src: url('../fonts/SFUIText-Bold.ttf') format('truetype');
+}
+
+
+/* -- Theme Body Style -- */
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: GothamBook;
+    font-size: 15px;
+    line-height: 1.5;
+    word-break: break-word;
+}
+
+
+/* -- All Basic Styles -- */
+
+a {
+    color: #f2a433;
+    transition: .3s;
+    outline: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+p {
+    font-size: 16px;
+    color: #363e46;
+}
+
+figure,
+img {
+    max-width: 100%;
+    object-fit: cover;
+    height: auto;
+}
+
+iframe {
+    max-width: 100%;
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+label {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #353638;
+    display: block;
+}
+
+input,
+textarea,
+select {
+    font-family: SFUIText;
+    font-size: 15px;
+    color: #777777;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, .14);
+    width: 100%;
+    padding: 12px 15px;
+}
+
+input[type="submit"] {
+    font-family: GothamMedium;
+    background: #363e46;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    padding: 13px 25px;
+    border: none;
+    width: auto;
+    transition: .3s;
+    line-height: 1;
+}
+
+input[type="submit"]:hover,
+div.wpcf7 input[type=reset]:hover {
+    background: #e4be1a;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+select {
+    padding-left: 8px;
+}
+
+blockquote,
+blockquote p {
+    font-family: SFUITextLight !important;
+    font-weight: 700 !important;
+    font-style: italic !important;
+    color: #4460af !important;
+}
+
+.container {
+    max-width: 1230px;
+}
+
+
+/* -- Heading Styles -- */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: GothamBold;
+    color: #363e46;
+    line-height: 1.5;
+}
+
+h1 {
+    font-size: 42px;
+}
+
+h2 {
+    font-size: 33px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+h4 {
+    font-size: 26px;
+}
+
+h5 {
+    font-size: 22px;
+}
+
+h6 {
+    font-size: 18px;
+}
+
+
+/* -- Header Styles -- */
+
+.site-header {
+    position: relative;
+    overflow: hidden;
+}
+
+.other-page-header:before {
+    content: '';
+    background: rgba(54, 62, 70, .9);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+
+/* -- Top Navigation Styles -- */
+
+.navbar-expand-lg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 99;
+    padding: 42px 0;
+}
+
+.site-title {
+    font-family: GothamBold;
+    font-size: 38px;
+    font-style: italic;
+    text-transform: uppercase;
+    margin: 0;
+    line-height: 1;
+}
+
+.site-title a {
+    color: #ffffff;
+}
+
+.site-title span {
+    font-family: GothamLight;
+    color: #e2e41a;
+}
+
+.site-description {
+    font-style: italic;
+    color: #ffffff;
+    margin: 0;
+}
+.top-navigation .site-branding img{
+	max-width: 290px;
+}
+.navbar-expand-lg .menu-item {
+    margin: 0 24px;
+    position: relative;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    font-family: GothamLight;
+    font-size: 15px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 0 0 5px;
+    position: relative;
+    border-bottom: 2px solid transparent;
+    transition: 0s;
+}
+
+.navbar-expand-lg .navbar-nav .current_page_item .nav-link {
+    position: relative;
+}
+
+.navbar-expand-lg .navbar-nav .current_page_item .nav-link:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 2.5px solid transparent;
+    border-right: 2.5px solid transparent;
+    border-bottom: 4px solid #e2e41a;
+    bottom: 0;
+    right: 42%;
+}
+
+.navbar-expand-lg .navbar-nav .current_page_item .nav-link:after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: #e2e41a;
+    display: block;
+}
+
+.navbar-expand-lg .navbar-nav .current_page_item .sub-menu .nav-link:before,
+.navbar-expand-lg .navbar-nav .current_page_item .sub-menu .nav-link:after {
+    display: none;
+}
+
+#navbarmenus div {
+    margin-left: auto;
+}
+
+
+/* -- Background Image Slide Styles -- */
+
+.carousel-inner {
+    position: relative;
+}
+
+.carousel-inner:before,
+.about_section_three::before {
+    content: '';
+    background: rgba(0, 0, 0, .41);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 9;
+}
+
+.carousel-item {
+    min-height: 735px;
+    background-size: cover;
+    background-position: center;
+}
+
+.carousel-indicators {
+    bottom: 20px;
+}
+
+.carousel-indicators li {
+    height: 17px;
+    width: 17px;
+    border: none;
+    margin: 0 9px 0 0;
+    opacity: 1;
+    background: #4c535a;
+}
+
+.carousel-indicators li:last-child {
+    margin: 0;
+}
+
+.carousel-indicators li.active {
+    background: #c4c73c;
+}
+
+
+/* -- Header Content Styles -- */
+
+.header-content {
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 38%;
+    z-index: 9;
+}
+
+.header-content h1 {
+    color: #ffffff;
+    max-width: 700px;
+    margin: auto;
+}
+
+.header-content h2 {
+    font-family: GothamBold;
+    font-size: 53px;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 13px;
+}
+
+.header-content span,
+.page-header-content span {
+    color: #e2e41a;
+}
+
+.header-content p {
+    font-family: SFUIText;
+    font-size: 18px;
+    color: #ffffff;
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.8;
+    max-height: 96px;
+    overflow: hidden;
+}
+
+.header-content a {
+    font-family: GothamMedium;
+    background: #363e46;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    padding: 13px 25px;
+    margin-top: 40px;
+    border: 2px solid #363e46;
+    display: inline-block;
+}
+
+.header-content a.enquiry {
+    color: #e2e41a;
+    background: transparent;
+    border-color: #e2e41a;
+    padding: 13px 17px;
+    margin-left: 15px;
+}
+
+.header-content a.enquiry:hover,
+.header-content a:hover {
+    background: #e2e41a;
+    color: #363e46;
+    border-color: #e2e41a;
+}
+
+
+/* -- Section One Styles -- */
+
+.section_one {
+    background-repeat: no-repeat;
+    background-position: 87% 100%;
+    padding: 112px 0 78px;
+}
+
+.section_one h2,
+.about_section_one h2 {
+    font-family: GothamBook;
+    font-size: 61px;
+    letter-spacing: -.7px;
+    line-height: 1.2;
+    position: relative;
+    margin-bottom: 58px;
+    z-index: 9;
+}
+
+.section_one h2:before,
+.about_section_one h2:before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -82px;
+    background: #e2e41a;
+    height: 118%;
+    width: 100%;
+    max-width: 365px;
+    z-index: -9;
+}
+
+.section_one h2 span,
+.about_section_one h2 span {
+    font-family: GothamBold;
+    font-size: 79px;
+    text-transform: uppercase;
+    letter-spacing: -4px;
+}
+
+section h2 span {
+    display: block;
+}
+
+.section_one .content {
+    max-width: 650px;
+}
+
+.section_one p,
+.about_section_one p {
+    font-family: SFUITextLight;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: .11px;
+    line-height: 1.6;
+    margin-bottom: 32px;
+}
+
+
+/* -- Section Two Styles -- */
+
+.section_two {
+    background: #363e46;
+    overflow: hidden;
+}
+
+.section_two h2 {
+    font-size: 65px;
+    color: #ffffff;
+    text-transform: uppercase;
+    line-height: 1.3;
+    letter-spacing: -1.3px;
+    margin-block-end: 35px;
+}
+
+.section_two h2 span {
+    font-size: 45px;
+    color: #e2e41a;
+    letter-spacing: 0;
+}
+
+.section_two .content-paragraph {
+    max-width: 635px;
+}
+
+.section_two figure {
+    height: 100%;
+    margin: 0;
+}
+
+.section_two figure .image {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    margin: 0;
+}
+
+.section_two p {
+    font-family: SFUITextLight;
+    font-size: 17px;
+    color: #e7e7df;
+    line-height: 1.8;
+    margin-bottom: 24px;
+    display: flex;
+}
+
+.section_two p:last-child {
+    margin-bottom: 0;
+}
+
+.section_two p:before {
+    content: '';
+    background: url('../../assets/images/tick.png');
+    background-repeat: no-repeat;
+    height: 40px;
+    width: 100%;
+    max-width: 40px;
+    margin: auto 20px auto auto;
+}
+
+.section_two .content {
+    padding: 136px 37px;
+}
+
+
+/* -- Section Three Styles -- */
+
+.section_three {
+    padding: 160px 0 100px;
+}
+
+.section_three .container {
+    overflow: hidden;
+}
+
+.section_three h2 {
+    font-family: GothamBook;
+    font-size: 47px;
+    line-height: 1.4;
+    letter-spacing: -.5px;
+    margin-bottom: 26px;
+}
+
+.section_three h2 span,
+.section_three h3,
+.section_three h4 {
+    font-family: GothamBold;
+    font-size: 34px;
+    text-transform: uppercase;
+}
+
+.section_three h2 span:nth-child(2) {
+    font-size: 53px;
+    line-height: 1.2;
+}
+
+.section_three h4 {
+    font-size: 21px;
+    margin-bottom: 22px;
+    position: relative;
+}
+
+.section_three h4:before {
+    content: '';
+    width: 42px;
+    height: 2px;
+    background: #363e46;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+}
+
+.section_three .column-left p {
+    margin-bottom: 30px;
+    line-height: 1.7;
+}
+
+.section_three .column-left p:last-child {
+    margin: 0;
+}
+
+.section_three .column-right {
+    max-width: 665px;
+    margin-left: auto;
+}
+
+.section_three .content {
+    background: #e2e41a;
+    margin-bottom: 38px;
+    padding: 20px 36px 36px;
+    transition: .3s;
+}
+
+.section_three .content:hover {
+    background: #e4be1a;
+}
+
+.section_three .column-right .row {
+    margin: 0 -18px;
+}
+
+.section_three .column-right .col-sm-6 {
+    padding: 0 18px;
+}
+
+.section_three .col-sm-6:nth-child(2) .content,
+.section_three .col-sm-6:nth-child(3) .content {
+    background: #363e46;
+}
+
+.section_three .col-sm-6:nth-child(2) .content:hover,
+.section_three .col-sm-6:nth-child(3) .content:hover {
+    background: #463e36;
+}
+
+.section_three .col-sm-6:nth-child(2) h4,
+.section_three .col-sm-6:nth-child(3) h4,
+.section_three .col-sm-6:nth-child(2) p,
+.section_three .col-sm-6:nth-child(3) p {
+    color: #e2e41a;
+}
+
+.section_three .col-sm-6:nth-child(2) h4:before,
+.section_three .col-sm-6:nth-child(3) h4:before {
+    background: #e2e41a;
+}
+
+.section_three .content p {
+    font-family: SFUIText;
+    font-size: 14px;
+    margin: 0;
+    line-height: 1.7;
+}
+
+
+/* -- Section Four Styles -- */
+
+.section_four {
+    text-align: center;
+    background: #f2f7fb;
+    padding: 110px 0 100px;
+}
+
+.section_four h3 {
+    font-family: GothamBold;
+    font-size: 30px;
+    color: #5e5c5c;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 28px;
+    padding-bottom: 21px;
+}
+
+.section_four span {
+    font-family: GothamBold;
+    font-size: 38px;
+    color: #252444;
+    text-transform: uppercase;
+    letter-spacing: -.8px;
+    display: block
+}
+
+.section_four h3:before,
+.section_four h3:after {
+    content: "";
+    height: 1px;
+    width: 36%;
+    background: #252444;
+    position: absolute;
+    bottom: 0px;
+    left: 28%;
+}
+
+.section_four h3:after {
+    background: #5a56dc;
+    width: 9%;
+    left: unset;
+    right: 26%;
+}
+
+.section_four .paragraph {
+    font-family: SFUIText;
+    font-size: 17px;
+    color: #252444;
+    max-width: 600px;
+    margin: auto;
+    line-height: 1.7;
+}
+
+.section_four .container {
+    max-width: 1195px;
+    overflow: hidden;
+}
+
+.section_four .row {
+    margin: 60px -26px 0 -26px;
+}
+
+.section_four .col-lg-4 {
+    padding: 0 26px;
+}
+
+.section_four .blog {
+    background: #ffffff;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.section_four .wp-post-image {
+    height: 190px;
+}
+
+.section_four .contents {
+    text-align: left;
+}
+
+.section_four .blog-heading {
+    font-family: GothamBook;
+    padding: 30px 30px 5px;
+    line-height: 0;
+    text-transform: none;
+}
+
+.section_four .blog-heading a {
+    font-size: 19px;
+    font-weight: 700;
+    color: #252444;
+    line-height: 1.4;
+}
+
+.section_four .contents p {
+    font-size: 15px;
+    color: #252444;
+    max-height: 74px;
+    overflow: hidden;
+    padding: 0 30px;
+    line-height: 1.7;
+}
+
+.section_four .read_more {
+    font-family: GothamBold;
+    font-size: 13px;
+    color: #363e46;
+    text-transform: uppercase;
+    display: block;
+    border-top: 1px solid rgba(20, 40, 50, 0.08);
+    padding: 16px 30px;
+    margin-top: 21px;
+}
+
+.section_four .read_more img {
+    margin-left: 12px;
+}
+
+
+/* -- Section Five Styles -- */
+
+.section_five {
+    padding: 100px 0 0;
+    text-align: center
+}
+
+.section_five figure {
+    margin: 30px 0 0;
+}
+
+.section_five h2 {
+    font-family: GothamLight;
+    font-size: 42px;
+    font-weight: 700;
+    letter-spacing: .5px;
+    line-height: 1.3;
+}
+
+.section_five span {
+    font-family: GothamBold;
+    font-size: 61px;
+    text-transform: uppercase;
+}
+
+.section_five p {
+    font-family: GothamLight;
+    font-size: 17px;
+    font-weight: 700;
+    max-width: 765px;
+    margin: 20px auto auto;
+    line-height: 1.7;
+}
+
+.section_five a {
+    font-family: GothamBold;
+    font-size: 19px;
+    background: #e2e41a;
+    color: #363e46;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 14px 30px;
+    margin-top: 26px;
+}
+
+.section_five a:hover {
+    background: #e4be1a;
+}
+
+
+/* -- About Section One Styles -- */
+
+.about_section_one {
+    padding: 100px 0;
+}
+
+.about_section_one h2 {
+    margin-left: 82px;
+}
+
+.about_section_one .content {
+    margin-left: 82px;
+}
+
+
+/* -- About Section Three Styles -- */
+
+.about_section_three {
+    background: url('../../assets/images/people-meeting.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+    padding: 68px 0 152px;
+}
+
+.about_section_three::before {
+    z-index: 0;
+    background: rgba(0, 0, 0, .62);
+}
+
+.about_section_three h2 {
+    color: #ffffff;
+    position: relative;
+    line-height: 1.5;
+}
+
+.about_section_three .row {
+    margin: 68px -3px 0;
+}
+
+.about_section_three .col-lg-3 {
+    padding: 0 3px;
+    text-align: left;
+}
+
+.about_section_three .col-sm-6:nth-child(3) .content,
+.about_section_three .col-sm-6:nth-child(4) h4:before {
+    background: #e2e41a;
+}
+
+.about_section_three .col-sm-6:nth-child(4) h4,
+.about_section_three .col-sm-6:nth-child(4) p {
+    color: #e2e41a;
+}
+
+.about_section_three .col-sm-6:nth-child(4) .content,
+.about_section_three .col-sm-6:nth-child(3) h4:before {
+    background: #363e46;
+}
+
+.about_section_three .col-sm-6:nth-child(3) h4,
+.about_section_three .col-sm-6:nth-child(3) p {
+    color: #363e46;
+}
+
+.about_section_three .content {
+    margin-block-end: 6px;
+}
+
+.about_section_three .col-sm-6:nth-child(3) .content:hover {
+    background: #e4be1a;
+}
+
+.about_section_three .col-sm-6:nth-child(4) .content:hover {
+    background: #463e36;
+}
+
+
+/* -- Blog Page Styles -- */
+
+.blog-wrap,
+.single-wrap,
+.page-wrap,
+.archive-wrap,
+.error-wrap {
+    padding: 70px 0;
+}
+
+#main {
+    padding-right: 48px;
+}
+
+#main article {
+    margin-bottom: 54px;
+}
+
+#main article:last-child {
+    margin: 0;
+}
+
+#main .entry-header figure {
+    position: relative;
+    margin: 0;
+    min-height: 32px;
+}
+
+#main .entry-header figure:before {
+    content: '';
+    border: 2px solid #fff;
+    position: absolute;
+    top: 15px;
+    bottom: 15px;
+    right: 15px;
+    left: 15px;
+    opacity: .43;
+}
+
+.entry-header img {
+    height: 368px;
+}
+
+.entry-meta {
+    position: absolute;
+    bottom: 30px;
+    left: 26px;
+}
+
+.posted-on a,
+.byline a {
+    font-family: GothamBlack;
+    font-size: 12px;
+    color: #363e46;
+    background: #e2e41a;
+    text-transform: uppercase;
+    padding: 9px 14px;
+}
+
+.byline a {
+    background: #363e46;
+    color: #ffffff;
+    padding: 9px 24px;
+    margin-left: 2px;
+}
+
+.entry-content {
+    padding: 24px 20px;
+}
+
+.entry-title,
+.entry-title a {
+    font-family: GothamBook;
+    font-size: 42px;
+    color: #363e46;
+    line-height: 1.2;
+    display: block;
+    letter-spacing: -1.5px;
+}
+
+.entry-content p {
+    line-height: 1.7;
+}
+
+.more_link {
+    font-family: GothamMedium;
+    font-size: 13px;
+    color: #6b757e;
+    border: 3px solid rgba(54, 62, 70, .16);
+    padding: 8px 16px;
+    margin-top: 6px;
+    display: inline-block;
+}
+
+
+/* -- Single Page Styles -- */
+
+.single-wrap p {
+    margin-bottom: 26px;
+}
+
+
+/* -- Page Styles -- */
+
+.page .post-thumbnail {
+    margin-bottom: 15px;
+}
+
+.page .entry-content {
+    padding: 0;
+}
+
+.page #main {
+    padding: 0 15px;
+}
+
+.page-header-content {
+    text-align: center;
+    position: relative;
+    padding: 166px 0 64px;
+}
+
+.page-header-content h1 {
+    font-size: 62px;
+    color: #ffffff;
+    max-width: 700px;
+    margin: 0 auto;
+    text-transform: uppercase;
+}
+
+
+/* -- Sidebar Widget Styles -- */
+
+#sidebar {
+    padding-left: 0;
+}
+
+.widget {
+    border: 1px solid rgba(54, 62, 70, .16);
+    padding: 16px 24px 22px;
+    margin-bottom: 48px;
+}
+
+.widget-title {
+    font-size: 26px;
+    color: #363e46;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+}
+
+.widget ul {
+    margin: 0;
+}
+
+.widget li {
+    margin: 0 0 10px;
+}
+
+.widget li:last-child {
+    margin: 0;
+}
+
+.widget a {
+    font-family: SFUIText;
+    font-size: 14px;
+    color: #363e46;
+    padding: 0;
+}
+
+.widget a,
+.widget span,
+.widget_categories li,
+.widget_archive li,
+.widget_tag_cloud .tagcloud a,
+.widget #calendar_wrap tfoot a {
+    font-family: GothamBold;
+    color: #395572;
+    text-transform: uppercase;
+    display: block;
+}
+
+.widget span {
+    margin-top: 3px;
+}
+
+.widget_recent_entries li,
+.widget_recent_comments li {
+    margin-bottom: 24px;
+}
+
+.widget_recent_comments li {
+    font-family: GothamBold;
+    font-size: 12px;
+    color: #6b757e;
+    text-transform: uppercase;
+}
+
+.widget_recent_entries a,
+.widget_recent_comments a {
+    font-family: SFUIText;
+    font-size: 14px;
+    color: #363e46;
+    text-transform: none;
+}
+
+.widget_categories li,
+.widget_archive li,
+.widget_tag_cloud .tagcloud a {
+    font-size: 12px;
+    display: flex;
+}
+
+.widget_categories a,
+.widget_archive a,
+.widget_tag_cloud a {
+    margin-right: auto;
+}
+
+.widget_tag_cloud .tagcloud a {
+    font-size: 14px !important;
+}
+
+.widget_media_audio span,
+.widget_recent_comments span {
+    margin: 0;
+}
+
+.widget_tag_cloud .tagcloud span {
+    margin: 0 0 10px auto;
+}
+
+.widget_text ul {
+    margin-bottom: 12px;
+    padding-left: 18px;
+    list-style-type: circle;
+}
+
+.widget_text ul li {
+    margin-bottom: 5px;
+}
+
+.error-wrap .page-content .widget {
+    margin: 48px 0 0;
+}
+
+#wp-calendar {
+    font-family: GothamBold;
+    width: 100%;
+    background: #f2f7fb;
+    color: #6c757d;
+    text-align: center;
+}
+
+#wp-calendar thead {
+    background: #252444;
+    color: #cccccc;
+}
+
+#wp-calendar th,
+#wp-calendar td {
+    padding: 5px;
+}
+
+#wp-calendar tfoot {
+    background: #fff;
+    text-align: left;
+}
+
+#wp-calendar tfoot td {
+    padding-top: 15px;
+}
+
+
+/* -- Comment Form Styles -- */
+
+#comments {
+    border-top: 1px solid #f1f1f1;
+    margin-top: 32px;
+    padding-top: 32px;
+}
+
+.comments-title,
+#reply-title {
+    font-family: GothamBold;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+#main .comment article {
+    margin: 0;
+}
+
+#comments ol {
+    padding: 0;
+    list-style-type: none;
+}
+
+#comments .comment-list ol {
+    padding-left: 26px;
+}
+
+#comments li {
+    padding: 20px 0;
+    margin-top: 20px;
+    border-top: 1px solid #eeeeee;
+}
+
+#comments li:last-child {
+    padding-bottom: 0;
+}
+
+.comment-meta img {
+    height: 38px;
+    width: 38px;
+    border-radius: 100%;
+    margin-right: 5px;
+}
+
+.comment-meta .fn {
+    text-transform: capitalize;
+}
+
+.comment-meta .comment-metadata {
+    font-size: 12px;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.comment-content {
+    padding: 15px 0;
+}
+
+.comment-content p {
+    font-family: SFUIText;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 5px;
+}
+
+.comment-reply-link,
+#cancel-comment-reply-link {
+    font-size: 10px;
+    font-weight: 700;
+    background: #363e46;
+    color: #ffffff;
+    padding: 3px 8px;
+    text-transform: uppercase;
+    opacity: .8;
+    letter-spacing: .5px;
+    display: inline-block;
+}
+
+.comment-reply-link:hover {
+    opacity: 1;
+    color: #ffffff;
+}
+
+#respond {
+    max-width: 760px;
+    margin: 45px auto 0;
+}
+
+#commentform .required {
+    color: #dd1e26;
+}
+
+.comment-form-comment {
+    margin-bottom: 26px;
+}
+
+.comment-form-author,
+.comment-form-email {
+    display: inline-block;
+    width: 48%;
+    margin-bottom: 26px;
+}
+
+.comment-form-email {
+    width: 50%;
+    margin-left: 1%;
+}
+
+.comment-form-url {
+    width: 48%;
+    margin-bottom: 26px;
+}
+
+#commentform .comment-form-cookies-consent {
+    display: flex;
+    margin: 32px 0;
+}
+
+#commentform .comment-form-cookies-consent input {
+    width: 20px;
+    margin: auto 0;
+}
+
+#commentform .comment-form-cookies-consent label {
+    margin: auto 0 auto 5px;
+}
+
+#cancel-comment-reply-link {
+    font-family: GothamBook;
+    background: #395572;
+    padding: 5px 10px;
+}
+
+
+/* -- Navigation Pagination Styles -- */
+
+.pagination,
+.comment_pagination {
+    margin: 0;
+    line-height: 2;
+}
+
+.pagination .screen-reader-text {
+    display: none;
+}
+
+#comments .page-numbers,
+.nav-links .page-numbers {
+    font-family: GothamBlack;
+    font-size: 17px;
+    color: #363e46;
+    opacity: .8;
+    padding: 2px;
+    margin: 0 10px;
+    margin-right: 10px;
+    transition: unset;
+    text-transform: uppercase;
+}
+
+#comments .page-numbers:first-child,
+.nav-links .page-numbers:first-child {
+    margin-left: 0 !important;
+}
+
+#comments .page-numbers:hover,
+.nav-links .page-numbers:hover {
+    border-bottom: 2px solid #4460af;
+}
+
+.nav-links .page-numbers.current,
+#comments .page-numbers.current {
+    padding: 5px 7px;
+    background: #e2e41a;
+    border: none;
+}
+
+
+/* -- Contact Form Seven Styles -- */
+
+div.wpcf7 {
+    max-width: 995px;
+    margin: auto;
+    padding: 35px 0 0;
+    text-align: center;
+}
+
+div.wpcf7 h2 {
+    font-family: GothamMedium;
+    font-size: 33px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 26px;
+}
+
+div.wpcf7 h5 {
+    font-family: SFUIText;
+    font-size: 14px;
+    max-width: 680px;
+    margin: 0 auto 56px;
+    letter-spacing: .15px;
+    line-height: 1.6;
+}
+
+div.wpcf7 .row {
+    text-align: left;
+}
+
+div.wpcf7 br {
+    display: none;
+}
+
+div.wpcf7 p {
+    margin: 0 0 25px;
+}
+
+div.wpcf7 label {
+    font-family: SFUIText;
+    font-weight: 400;
+    color: #5e6266;
+    margin-bottom: 11px;
+}
+
+div.wpcf7 input {
+    font-family: SFUIText;
+    padding: 8px 15px;
+}
+
+div.wpcf7 input::placeholder {
+    font-size: 11px;
+    font-style: italic;
+    color: #5e6266;
+}
+
+div.wpcf7 input[type=submit] {
+    padding: 14px 42px;
+    margin-top: 5px;
+}
+
+div.wpcf7 input[type=reset] {
+    font-size: 15px;
+    font-weight: 700;
+    display: inline-block;
+    width: auto;
+    text-transform: uppercase;
+    background: #e2e41a;
+    color: #363e46;
+    border: none;
+    border-radius: 0;
+    padding: 14px 50px;
+    line-height: 1;
+}
+
+div.wpcf7 input[type=reset]:focus {
+    box-shadow: none !important;
+}
+
+
+/* -- Footer Styles -- */
+
+#footer {
+    background: url('../../assets/images/footer.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+#footer .top-footer {
+    background: rgba(54, 62, 70, .9);
+    padding: 82px 0 46px;
+}
+
+
+/* -- Footer Copyright Styles -- */
+
+#footer .last-footer {
+    background: rgba(50, 56, 63, .92);
+    padding: 15px 0;
+}
+
+.last-footer p {
+    font-size: 13px;
+    color: rgba(255, 255, 255, .67);
+    margin: 0;
+}
+
+
+/* -- Footer Widget Styles -- */
+
+#footer .column {
+    padding: 0 15px;
+    width: 22%;
+}
+
+#footer .column-first {
+    width: 34%;
+    padding: 0 105px 0 15px;
+}
+
+#footer .widget {
+    padding: 0;
+    margin: 0 0 32px;
+    border: none;
+}
+
+#footer .widget-title {
+    font-size: 18px;
+    color: #e2e41a;
+    position: relative;
+    margin-bottom: 22px;
+}
+
+#footer .widget-title:before {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 74px;
+    bottom: -7px;
+    left: 0;
+    background: #e2e41a;
+}
+
+#footer .widget_text .widget-title {
+    margin-bottom: 32px;
+}
+
+#footer .widget li {
+    margin-bottom: 7px;
+}
+
+#footer .widget_recent_entries li,
+#footer .widget_recent_comments li {
+    margin-bottom: 16px;
+}
+
+#footer .widget p {
+    font-family: SFUIText;
+    font-size: 13px;
+    color: #ffffff;
+    line-height: 1.7;
+    letter-spacing: .3px;
+}
+
+#footer .widget a {
+    font-family: GothamBook;
+    color: #ffffff;
+    text-transform: capitalize;
+}
+
+.paragraph {
+    padding: 28px 0;
+}
+
+.paragraph p {
+    font-size: 15px;
+    color: #e2e41a;
+    margin-bottom: 26px;
+    letter-spacing: .3px;
+}
+
+.paragraph p.second {
+    font-family: GothamBold;
+    font-size: 18px;
+    color: #3f4347;
+    background: #e2e41a;
+    padding: 10px;
+    margin-bottom: 12px;
+    text-align: center;
+    max-width: 280px;
+}
+
+.paragraph p.third {
+    font-family: GothamMedium;
+    font-size: 13px;
+    color: #ffffff;
+    margin-bottom: 0;
+}
