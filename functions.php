@@ -184,6 +184,7 @@ add_action( 'widgets_init', 'ring_ring_widgets_init' );
  */
 function ring_ring_scripts() {
 	// Loading bootstrap css and js.
+	wp_enqueue_script( 'jquery' );
 	wp_enqueue_style( 'bootstrap-css', get_theme_file_uri( '/assets/css/bootstrap.min.css' ), array( 'ring-ring-style' ), '4.3.1' );
 	wp_enqueue_script( 'bootstrap-js', get_theme_file_uri( '/assets/js/bootstrap.min.js' ), array(), '4.3.1', true );
 

@@ -517,7 +517,7 @@ section h2 span {
     height: 40px;
     width: 100%;
     max-width: 40px;
-    margin: auto 20px auto auto;
+    margin: auto 20px auto 0;
 }
 
 .section_two .content {
